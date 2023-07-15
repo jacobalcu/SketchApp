@@ -1,3 +1,7 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -9,8 +13,6 @@ body {
 }
 .inner {
   background-color: antiquewhite;
-  height: 20px;
-  width: 20px;
 }
 
 .inner.triggered {
@@ -18,9 +20,10 @@ body {
 }
 
 #outer {
-  border: 0.1px solid black;
+  box-shadow: 0 40px 80px 0 rgba(195, 96, 96, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-wrap: wrap;
-  height: 320px;
-  width: 320px;
+  height: 480px;
+  width: 480px;
 }
