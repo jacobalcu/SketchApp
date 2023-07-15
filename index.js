@@ -1,5 +1,6 @@
 let outerDiv = document.getElementById("outer");
 let size = 16;
+let currColor = "aqua";
 
 let createBoard = (size) => {
   for (let i = 0; i < size * size; i++) {
@@ -29,8 +30,9 @@ let deleteBoard = () => {
 let setActive = () => {
   let divs = document.querySelectorAll(".inner");
   divs.forEach((div) => {
-    div.addEventListener("mousemove", (e) => {
-      e.target.classList.add("triggered");
+    div.addEventListener("mousemove", () => {
+      //   e.target.classList.add("triggered");
+      div.style["background-color"] = currColor;
     });
   });
 };
@@ -40,15 +42,21 @@ setActive();
 
 let changeSize = document.querySelector(".size");
 changeSize.addEventListener("click", () => {
-  let newSize = prompt("What should the new size be?");
-  if (newSize > 99) {
+  size = prompt("What should the new size be?");
+  if (size > 99) {
+    size = 16;
     alert("Must be less than or equal to 100");
     exit;
   }
   deleteBoard();
-  createBoard(newSize);
+  createBoard(size);
   setActive();
 });
 
 let button = document.querySelector(".reset");
 button.addEventListener("click", resetFunc);
+
+let changeColor = document.querySelector(".color");
+changeColor.addEventListener("click", () => {
+  currColor = prompt("Change color");
+});
