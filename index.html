@@ -3,15 +3,36 @@
   <head>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" type="image/x-icon" href="./images/myfavicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Etch-A-Sketch</title>
   </head>
   <body>
     <h1>Etch-A-Sketch</h1>
-    <div id="outer"></div>
-    <button class="size">Change Pixelation</button>
-    <button class="reset">Reset</button>
+
+    <div class="container">
+      <div id="outer"></div>
+      <div class="buttons">
+        <button class="size">Change Pixelation</button>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        jacobalcu
+      </p>
+      <a href="https://github.com/jacobalcu/SketchApp" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
