@@ -2,6 +2,10 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  text-shadow: 3px 1px 15px gray;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -26,4 +30,18 @@ body {
   flex-wrap: wrap;
   height: 480px;
   width: 480px;
+}
+
+button {
+  background-color: #555555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 60px 0 rgba(0, 0, 0, 0.438);
+}
+
+button:active {
+  scale: 0.95;
 }
