@@ -1,2 +1,2 @@
 # SketchApp
-Etch-a-Sketch type web app
+Check out my [Etch-A-Sketch Game](https://jacobalcu.github.io/SketchApp/)
