@@ -1,3 +1,5 @@
+const origColor = "antiquewhite";
+
 let outerDiv = document.getElementById("outer");
 let size = 16;
 let currColor = "aqua";
@@ -16,7 +18,7 @@ let resetFunc = () => {
   let divs = document.querySelectorAll(".inner");
 
   divs.forEach((div) => {
-    div.classList.remove("triggered");
+    div.style["background-color"] = origColor;
   });
 };
 
